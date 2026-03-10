@@ -1,6 +1,6 @@
 name: Human Input Protocol
 description: Submit the last technical item read.
-title: "[HUMAN]: "
+title: "[HUMAN]: [Insert Name of Paper, Code, or Blog Here]"
 labels: ["human-record"]
 body:
   - type: checkboxes
