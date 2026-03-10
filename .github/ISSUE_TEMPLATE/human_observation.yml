@@ -1,0 +1,31 @@
+name: Human Input Protocol
+description: Submit the last technical item read.
+title: "[HUMAN]: "
+labels: ["human-record"]
+body:
+  - type: checkboxes
+    id: state-verification
+    attributes:
+      label: State Verification
+      options:
+        - label: Operating entity is human.
+          required: true
+        - label: Payload contains the last technical item read (source code, academic paper, or technical blog).
+          required: true
+        - label: Entity acknowledges the standard termination protocol (🤭 / 🙉 -> Closed).
+          required: true
+  - type: input
+    id: reading-date
+    attributes:
+      label: Date of Reading
+      description: Required format is [Month Year].
+      placeholder: "[March 2026]"
+    validations:
+      required: true
+  - type: textarea
+    id: technical-payload
+    attributes:
+      label: Technical Payload
+      description: Input the code snippet, paper abstract, or blog excerpt here.
+    validations:
+      required: true
